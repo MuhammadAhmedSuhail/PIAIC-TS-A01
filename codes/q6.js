@@ -1,0 +1,12 @@
+// Addition: 5 + 3 = 8
+var additionResult = 5 + 3;
+console.log("Addition: 5 + 3 = ".concat(additionResult));
+// Subtraction: 10 - 2 = 8
+var subtractionResult = 10 - 2;
+console.log("Subtraction: 10 - 2 = ".concat(subtractionResult));
+// Multiplication: 4 * 2 = 8
+var multiplicationResult = 4 * 2;
+console.log("Multiplication: 4 * 2 = ".concat(multiplicationResult));
+// Division: 16 / 2 = 8
+var divisionResult = 16 / 2;
+console.log("Division: 16 / 2 = ".concat(divisionResult));
