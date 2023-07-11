@@ -1,4 +1,4 @@
-# PIAIC-TS-A01
+![image](https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/740a7831-592a-4d0c-ba1b-53724d80f6e9)# PIAIC-TS-A01
 Assignment1 Codes for Typescript PIAIC WMD Program Quarter 1
 
 ### 1. Install [Node.js](https://nodejs.org/en/), [TypeScript](https://www.typescriptlang.org/download) and [VS Code](https://code.visualstudio.com/) on your computer.
@@ -850,10 +850,358 @@ export = {}
   <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/395d95fb-b83b-4f45-9012-71412d25c28c" alt="Image" />
 </p>
 
+---
 
+### 32. Checking Usernames: Do the following to create a program that simulates how websites ensure that everyone has a unique username.
 
+```typescript
+const current_users: string[] = ["john", "alice", "bob", "charlie", "david"];
+const new_users: string[] = ["john", "jane", "adam", "mike", "sarah"];
 
+for (const new_username of new_users) {
+  const usernameExists = current_users.some((current_username) =>
+    current_username.toLowerCase() === new_username.toLowerCase()
+  );
 
+  if (usernameExists) {
+    console.log(`The username '${new_username}' is already taken. Please enter a new username.`);
+  } else {
+    console.log(`The username '${new_username}' is available.`);
+  }
+}
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/fd790017-858b-4bb9-a63b-7df1db6c16d6" alt="Image" />
+</p>
+
+---
+
+### 33. Ordinal Numbers: Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
+
+```typescript
+const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+for (const number of numbers) {
+  let ordinalEnding: string;
+
+  if (number === 1) {
+    ordinalEnding = "st";
+  } else if (number === 2) {
+    ordinalEnding = "nd";
+  } else if (number === 3) {
+    ordinalEnding = "rd";
+  } else {
+    ordinalEnding = "th";
+  }
+
+  console.log(`${number}${ordinalEnding}`);
+}
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/8ddf3aab-6191-4092-99ef-82a33a166baa" alt="Image" />
+</p>
+
+---
+
+### 34. Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names in a array, and then use a for loop to print the name of each pizza.
+
+```typescript
+const favorite_pizzas: string[] = ["pepperoni", "margherita", "bbq chicken"];
+
+for (const pizza of favorite_pizzas) {
+  console.log(`I like ${pizza} pizza.`);
+}
+
+console.log("I really love pizza!");
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/b0634cc7-1a1d-4525-af87-e82749394472" alt="Image" />
+</p>
+
+---
+
+### 35. Animals: Think of at least three different animals that have a common characteristic. Store the names of these animals in a list, and then use a for loop to print out the name of each animal. Modify your program to print a statement about each animal, such as A dog would make a great pet. Add a line at the end of your program stating what these animals have in common. You could print a sentence such as Any of these animals would make a great pet!
+
+```typescript
+const animals: string[] = ["dog", "cat", "rabbit"];
+
+for (const animal of animals) {
+  console.log(`A ${animal} would make a great pet.`);
+}
+
+console.log("Any of these animals would make a great pet!");
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/e39275ab-7e95-483b-907f-8b8ad84a64a2" alt="Image" />
+</p>
+
+---
+
+### 36. T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function.
+
+```typescript
+function make_shirt(size: string, message: string): void {
+    console.log(`The shirt size is ${size} and it has the message "${message}" printed on it.`);
+  }
+  
+make_shirt("XL", "Hello, world!");
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/80eeab17-1813-4413-ae95-6443078b6ce0" alt="Image" />
+</p>
+
+---
+
+### 37. Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
+
+```typescript
+function make_shirt(size: string = "large", message: string = "I love TypeScript"): void {
+    console.log(`The shirt size is ${size} and it has the message "${message}" printed on it.`);
+  }
+  
+make_shirt(); // Large shirt with default message
+make_shirt("medium"); // Medium shirt with default message
+make_shirt("small", "Hello, world!"); // Custom-sized shirt with a different message
+  
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/d4398b67-3029-4ddd-ae28-b490641ee4db" alt="Image" />
+</p>
+
+---
+
+### 38. Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
+
+```typescript
+function describe_city(city: string, country: string = "Unknown"): void {
+    console.log(`${city} is in ${country}.`);
+  }
+  
+describe_city("Karachi", "Pakistan");
+describe_city("Tokyo", "Japan");
+describe_city("New York"); // Uses default country value
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/7b5d7d6c-5540-4cf3-8274-ffcb481519a8" alt="Image" />
+</p>
+
+---
+
+### 39. City Names: Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this: "Lahore, Pakistan" Call your function with at least three city-country pairs, and print the value that’s returned.
+
+```typescript
+function city_country(city: string, country: string): string {
+    return `${city}, ${country}`;
+}
+  
+console.log(city_country("Lahore", "Pakistan"));
+console.log(city_country("Paris", "France"));
+console.log(city_country("Sydney", "Australia"));
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/f78fd464-ec10-4bff-9c4a-577b956a0290" alt="Image" />
+</p>
+
+---
+
+### 40. Album: Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.
+
+```typescript
+function make_album(artist: string, title: string, tracks?: number): { artist: string, title: string, tracks?: number } {
+    const album: { artist: string, title: string, tracks?: number } = {
+      artist: artist,
+      title: title
+    };
+  
+    if (tracks !== undefined) {
+      album.tracks = tracks;
+    }
+  
+    return album;
+}
+  
+console.log(make_album("Artist 1", "Album 1"));
+console.log(make_album("Artist 2", "Album 2", 10));
+console.log(make_album("Artist 3", "Album 3", 15));
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/df8e4fdb-e0c9-400d-8f93-28ab2ba6f588" alt="Image" />
+</p>
+
+---
+
+### 41. Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
+
+```typescript
+function show_magicians(magicians: string[]): void {
+    for (const magician of magicians) {
+      console.log(magician);
+    }
+}
+  
+const magician_names: string[] = ["Harry Houdini", "David Copperfield", "Penn Jillette", "Teller"];
+
+show_magicians(magician_names);
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/faa4ca1e-56a8-41a9-82b4-a6e3c8ced0a1" alt="Image" />
+</p>
+
+---
+
+### 42. Great Magicians: Start with a copy of your program from Exercise 39. Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name. Call show_magicians() to see that the list has actually been modified.
+
+```typescript
+function make_great(magicians: string[]): string[] {
+    const great_magicians: string[] = [];
+  
+    for (const magician of magicians) {
+      const great_magician = magician + " the Great";
+      great_magicians.push(great_magician);
+    }
+  
+    return great_magicians;
+}
+  
+function show_magicians(magicians: string[]): void {
+for (const magician of magicians) {
+    console.log(magician);
+}
+}
+  
+const magician_names: string[] = ["Harry Houdini", "David Copperfield", "Penn Jillette", "Teller"];
+  
+const great_magician_names: string[] = make_great(magician_names);
+show_magicians(great_magician_names);
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/4c8e9ccc-907f-4851-85bd-bacd0ddfa024" alt="Image" />
+</p>
+
+---
+
+### 43. Unchanged Magicians: Start with your work from Exercise 40. Call the function make_great() with a copy of the array of magicians’ names. Because the original array will be unchanged, return the new array and store it in a separate array. Call show_magicians() with each array to show that you have one array of the original names and one array with the Great added to each magician’s name.
+
+```typescript
+function make_great(magicians: string[]): string[] {
+    const great_magicians: string[] = [];
+  
+    for (const magician of magicians) {
+      const great_magician = magician + " the Great";
+      great_magicians.push(great_magician);
+    }
+  
+    return great_magicians;
+}
+  
+function show_magicians(magicians: string[]): void {
+  for (const magician of magicians) {
+    console.log(magician);
+  }
+}
+  
+const magician_names: string[] = ["Harry Houdini", "David Copperfield", "Penn Jillette", "Teller"];
+
+const modified_magician_names: string[] = make_great([...magician_names]);
+show_magicians(magician_names);
+show_magicians(modified_magician_names);
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/dfc62959-5db2-4ec5-8e35-5551e45620d3" alt="Image" />
+</p>
+
+---
+
+### 44. Sandwiches: Write a function that accepts a array of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that is being ordered. Call the function three times, using a different number of arguments each time.
+
+```typescript
+function make_sandwich(...items: string[]): void {
+    console.log("Sandwich Summary:");
+    console.log("Bread");
+    for (const item of items) {
+      console.log(item);
+    }
+    console.log("Bread");
+    console.log("Sandwich Order Complete\n");
+}
+  
+make_sandwich("Cheese", "Ham");
+make_sandwich("Turkey", "Lettuce", "Tomato", "Mayonnaise");
+make_sandwich("Peanut Butter", "Jelly");
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/137e4322-c7cf-4ce4-8de9-cd237a9e9142" alt="Image" />
+</p>
+
+---
+
+### 45. Cars: Write a function that stores information about a car in a Object. The function should always receive a manufacturer and a model name. It should then accept an arbitrary number of keyword arguments. Call the function with the required information and two other name-value pairs, such as a color or an optional feature. Print the Object that’s returned to make sure all the information was stored correctly.
+
+```typescript
+function create_car(manufacturer: string, model: string, ...extras: { [key: string]: any }[]): { manufacturer: string, model: string, extras: { [key: string]: any } } {
+    const car: { manufacturer: string, model: string, extras: { [key: string]: any } } = {
+      manufacturer: manufacturer,
+      model: model,
+      extras: {}
+    };
+  
+    for (const extra of extras) {
+      const key = Object.keys(extra)[0];
+      const value = extra[key];
+      car.extras[key] = value;
+    }
+  
+    return car;
+}
+  
+const myCar = create_car("Toyota", "Camry", { color: "Blue" }, { feature: "Sunroof" });
+console.log(myCar);
+
+  
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/d0054183-d1b3-43b4-b5c3-efb5b3dae910" alt="Image" />
+</p>
 
 
 
