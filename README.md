@@ -1,4 +1,4 @@
-![image](https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/740a7831-592a-4d0c-ba1b-53724d80f6e9)# PIAIC-TS-A01
+# PIAIC-TS-A01
 Assignment1 Codes for Typescript PIAIC WMD Program Quarter 1
 
 ### 1. Install [Node.js](https://nodejs.org/en/), [TypeScript](https://www.typescriptlang.org/download) and [VS Code](https://code.visualstudio.com/) on your computer.
