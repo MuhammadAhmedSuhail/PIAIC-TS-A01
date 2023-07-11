@@ -449,6 +449,410 @@ export = {}
   <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/3d887aa0-ce4f-4372-81c4-80615163fde9" alt="Image" />
 </p>
 
+---
+
+### 21. They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+
+```typescript
+// Car objects
+const car1 = {
+    brand: "Toyota",
+    model: "Camry",
+    year: 2022,
+    color: "Silver",
+  };
+  
+const car2 = {
+brand: "Honda",
+model: "Civic",
+year: 2021,
+color: "Black",
+};
+
+const car3 = {
+brand: "Ford",
+model: "Mustang",
+year: 2023,
+color: "Red",
+};
+  
+// Print car objects
+console.log(car1);
+console.log(car2);
+console.log(car3);
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/488f3048-f193-4984-ba29-f5f4ffb5dfa7" alt="Image" />
+</p>
+
+---
+
+### 22. Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
+
+```typescript
+const numbers: number[] = [1, 2, 3, 4, 5];
+
+// Access an index that is out of bounds
+console.log(numbers[10]); // Intentional error
+
+// Correct the index error
+console.log(numbers[2]); // Accessing a valid index
+
+// Output the entire array
+console.log(numbers);
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/f322923d-51a1-4d07-8508-86fed61bdf32" alt="Image" />
+</p>
+
+---
+
+### 23. Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test.
+
+```typescript
+let car = 'subaru';
+
+// Test 1
+console.log("Is car == 'subaru'? I predict true.");
+console.log(car == 'subaru');
+
+// Test 2
+console.log("Is car == 'ford'? I predict false.");
+console.log(car == 'ford');
+
+// Test 3
+console.log("Is car != 'honda'? I predict true.");
+console.log(car != 'honda');
+
+// Test 4
+console.log("Is car != 'subaru'? I predict false.");
+console.log(car != 'subaru');
+
+// Test 5
+console.log("Is car === 'subaru'? I predict true.");
+console.log(car === 'subaru');
+
+// Test 6
+console.log("Is car === 'Subaru'? I predict false.");
+console.log(car === 'Subaru');
+
+// Test 7
+console.log("Is car !== 'toyota'? I predict true.");
+console.log(car !== 'toyota');
+
+// Test 8
+console.log("Is car !== 'subaru'? I predict false.");
+console.log(car !== 'subaru');
+
+// Test 9
+console.log("Is car starts with 's'? I predict true.");
+console.log(car.startsWith('s'));
+
+// Test 10
+console.log("Is car ends with 'tu'? I predict false.");
+console.log(car.endsWith('tu'));
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/3c9f975b-231f-4888-973d-fc0f88a6a27c" alt="Image" />
+</p>
+
+---
+
+### 24. More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests.
+
+```typescript
+let string1 = 'Hello';
+let string2 = 'World';
+let number1 = 10;
+let number2 = 20;
+let array = [1, 2, 3, 4, 5];
+
+// Tests for equality and inequality with strings
+console.log("Equality test: Is string1 == string2? I predict false.");
+console.log(string1 == string2);
+
+console.log("Inequality test: Is string1 != string2? I predict true.");
+console.log(string1 != string2);
+
+// Tests using the lowercase function
+console.log("Lowercase test: Is string1 lowercase 'hello'? I predict true.");
+console.log(string1.toLowerCase() === 'hello');
+
+console.log("Lowercase test: Is string2 lowercase 'world'? I predict true.");
+console.log(string2.toLowerCase() === 'world');
+
+// Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+console.log("Equality test: Is number1 == number2? I predict false.");
+console.log(number1 == number2);
+
+console.log("Inequality test: Is number1 != number2? I predict true.");
+console.log(number1 != number2);
+
+console.log("Greater than test: Is number1 > number2? I predict false.");
+console.log(number1 > number2);
+
+console.log("Less than test: Is number1 < number2? I predict true.");
+console.log(number1 < number2);
+
+console.log("Greater than or equal to test: Is number1 >= number2? I predict false.");
+console.log(number1 >= number2);
+
+console.log("Less than or equal to test: Is number1 <= number2? I predict true.");
+console.log(number1 <= number2);
+
+// Tests using "and" and "or" operators
+console.log("And operator test: Is number1 > 5 and number2 < 30? I predict true.");
+console.log(number1 > 5 && number2 < 30);
+
+console.log("Or operator test: Is number1 > 15 or number2 < 5? I predict true.");
+console.log(number1 > 15 || number2 < 5);
+
+// Test whether an item is in an array
+console.log("In array test: Is number1 in the array? I predict false.");
+console.log(array.includes(number1));
+
+// Test whether an item is not in an array
+console.log("Not in array test: Is number1 not in the array? I predict true.");
+console.log(!array.includes(number1));
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/34923183-1a94-4e54-89a2-5d7d731744c9" alt="Image" />
+</p>
+
+---
+
+### 25. Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
+
+```typescript
+// Version 1
+let alien_color: string = 'green';
+
+if (alien_color === 'green') {
+  console.log("Congratulations! You just earned 5 points.");
+}
+
+// Version 2
+
+alien_color = 'yellow';
+
+if (alien_color === 'green') {
+  console.log("Congratulations! You just earned 5 points.");
+}
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/2e0e3376-01f6-40e6-8811-2de7de314147" alt="Image" />
+</p>
+
+---
+
+### 26. Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
+
+```typescript
+// Version 1
+let alien_color = 'green';
+
+if (alien_color === 'green') {
+  console.log("Congratulations! You just earned 5 points for shooting the alien.");
+} else {
+  console.log("Congratulations! You just earned 10 points for shooting the alien.");
+}
+
+// Version 2
+alien_color = 'red';
+
+if (alien_color === 'green') {
+  console.log("Congratulations! You just earned 5 points for shooting the alien.");
+} else {
+  console.log("Congratulations! You just earned 10 points for shooting the alien.");
+}
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/7ff33110-a8d7-45e4-a115-3e1c5d9b72b1" alt="Image" />
+</p>
+
+---
+
+### 27. Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
+
+```typescript
+// Version 1
+let alien_color = 'green';
+
+if (alien_color === 'green') {
+  console.log("Congratulations! You just earned 5 points.");
+} else if (alien_color === 'yellow') {
+  console.log("Congratulations! You just earned 10 points.");
+} else if (alien_color === 'red') {
+  console.log("Congratulations! You just earned 15 points.");
+}
+
+// Version 2
+alien_color = 'yellow';
+
+if (alien_color === 'green') {
+  console.log("Congratulations! You just earned 5 points.");
+} else if (alien_color === 'yellow') {
+  console.log("Congratulations! You just earned 10 points.");
+} else if (alien_color === 'red') {
+  console.log("Congratulations! You just earned 15 points.");
+}
+
+// Version 3
+alien_color = 'red';
+
+if (alien_color === 'green') {
+  console.log("Congratulations! You just earned 5 points.");
+} else if (alien_color === 'yellow') {
+  console.log("Congratulations! You just earned 10 points.");
+} else if (alien_color === 'red') {
+  console.log("Congratulations! You just earned 15 points.");
+}
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/d991e7d6-5646-45fa-92e1-a1e6bb1685fc" alt="Image" />
+</p>
+
+---
+
+### 28. Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age
+
+```typescript
+const age = 25;
+
+if (age < 2) {
+  console.log("The person is a baby.");
+} else if (age < 4) {
+  console.log("The person is a toddler.");
+} else if (age < 13) {
+  console.log("The person is a kid.");
+} else if (age < 20) {
+  console.log("The person is a teenager.");
+} else if (age < 65) {
+  console.log("The person is an adult.");
+} else {
+  console.log("The person is an elder.");
+}
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/0d08a3b7-2a97-4812-a5e9-ecfa37f5c2ca" alt="Image" />
+</p>
+
+---
+
+### 29. Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
+
+```typescript
+const favorite_fruits: string[] = ["apple", "banana", "mango"];
+
+if (favorite_fruits.includes("apple")) {
+  console.log("You really like apples!");
+}
+
+if (favorite_fruits.includes("banana")) {
+  console.log("You really like bananas!");
+}
+
+if (favorite_fruits.includes("mango")) {
+  console.log("You really like mangoes!");
+}
+
+if (favorite_fruits.includes("strawberry")) {
+  console.log("You really like strawberries!");
+}
+
+if (favorite_fruits.includes("orange")) {
+  console.log("You really like oranges!");
+}
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/4383b8d1-b83e-4430-88d0-2517c53cee2c" alt="Image" />
+</p>
+
+---
+
+### 30. Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user.
+
+```typescript
+const usernames: string[] = ["admin", "Alice", "Bob", "Charlie", "David"];
+
+for (const username of usernames) {
+  if (username === "admin") {
+    console.log("Hello admin, would you like to see a status report?");
+  } else {
+    console.log(`Hello ${username}, thank you for logging in again.`);
+  }
+}
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/4e1aa9cf-e3a1-469b-b34a-1ce49a412901" alt="Image" />
+</p>
+
+---
+
+### 31. No Users: Add an if test to Exercise 28 to make sure the list of users is not empty. If the list is empty, print the message We need to find some users!. Remove all of the usernames from your array, and make sure the correct message is printed.
+
+```typescript
+const usernames: string[] = ["admin", "Ahmed", "Ahsan", "Sufian", "Talal"];
+
+if (usernames.length === 0) {
+  console.log("We need to find some users!");
+} else {
+  for (const username of usernames) {
+    if (username === "admin") {
+      console.log("Hello admin, would you like to see a status report?");
+    } else {
+      console.log(`Hello ${username}, thank you for logging in again.`);
+    }
+  }
+}
+
+// Remove all usernames from the array
+usernames.length = 0;
+
+if (usernames.length === 0) {
+  console.log("We need to find some users!");
+}
+
+export = {}
+```
+#### Output:
+<p align="center">
+  <img src="https://github.com/MuhammadAhmedSuhail/PIAIC-TS-A01/assets/72251313/395d95fb-b83b-4f45-9012-71412d25c28c" alt="Image" />
+</p>
+
+
+
+
 
 
 
