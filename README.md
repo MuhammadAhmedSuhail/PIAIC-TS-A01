@@ -1,5 +1,4 @@
-# PIAIC-TS-A01
-Assignment1 Codes for Typescript PIAIC WMD Program Quarter 1
+# Getting Started Typescript
 
 ### 1. Install [Node.js](https://nodejs.org/en/), [TypeScript](https://www.typescriptlang.org/download) and [VS Code](https://code.visualstudio.com/) on your computer.
 
